@@ -1,0 +1,23 @@
+<html>
+<body>
+<script src="http://localhost:3001/socket.io/socket.io.js"></script>
+<script>
+
+    var socket = io("http://localhost:3001/");
+
+    socket.on('connect', function() {
+        // Join the room.
+        socket.emit('subscribe', 'runebase');
+    });
+
+    socket.on('runebase/tx', function(data) {
+        console.log("New transaction received: ", data)
+    });
+
+    socket.on('runebase/block', function(data) {
+        console.log("Block received: ", data)
+    });
+
+</script>
+</body>
+</html>

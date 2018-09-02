@@ -1,0 +1,6 @@
+{
+  "notification": {
+    "title": "RUNEBASE",
+    "body": "Payment received: {{amount}} RUNEBASE"
+  }
+}
