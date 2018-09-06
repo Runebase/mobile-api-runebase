@@ -1,0 +1,20 @@
+{
+    "ENVIRONMENT": "DEV",
+	"INSIGHT_API_SOCKET_SERVER": "http://localhost:3001",
+	"INSIGHT_API_URL": "http://localhost:3001/insight-api",
+	"NETWORK": "mainnet",
+	"DB": {
+		"HOST": "127.0.0.1",
+		"PORT": "27017",
+		"DATABASE": "server",
+		"USER": "",
+		"PASSWORD": ""
+	},
+	"FIREBASE_SERVER_TOKEN": "..FIREBASE_SERVER_TOKEN..",
+	"disableRaven": "1",
+    "RECEIVE_API": {
+        "URL": "http://localhost:5555",
+        "PRIVATE_KEY": "..RECEIVE_API_PRIVATE_KEY..",
+        "PUBLIC_KEY": "..RECEIVE_API_PUBLIC_KEY.."
+    }
+}
