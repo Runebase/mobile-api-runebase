@@ -1,10 +1,10 @@
-const logger = require('log4js').getLogger('Qrc20Controller Controller');
+const logger = require('log4js').getLogger('Rrc20Controller Controller');
 const _ = require('lodash');
 const InsightApiRepository = require("../Repositories/InsightApiRepository");
 
 let Controllers = getControllers();
 
-class Qrc20Controller {
+class Rrc20Controller {
 
     constructor() {
         logger.info('Init');
@@ -36,7 +36,7 @@ class Qrc20Controller {
             return cb("Bad Request", 400);
         }
 
-        return InsightApiRepository.fetchQrc20Transfers(contractAddress, {
+        return InsightApiRepository.fetchRrc20Transfers(contractAddress, {
             offset: offset,
             limit: limit,
             addresses: addresses
@@ -69,4 +69,4 @@ class Qrc20Controller {
 
 }
 
-Controllers.qrc20 = new Qrc20Controller();
+Controllers.rrc20 = new Rrc20Controller();

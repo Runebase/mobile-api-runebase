@@ -33,7 +33,7 @@ const contractSchemaSchema = new mongoose.Schema({
     type: {
         type: String,
         required: true,
-        enum: ["Smart Contract", "Crowdsale", "QRC20 Token"]
+        enum: ["Smart Contract", "Crowdsale", "RRC20 Token"]
     },
     price: {
         type: String,
